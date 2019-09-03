@@ -34,7 +34,7 @@
 				</script>
 			
 			</div>
-		<label>CPF:</label><input type="text" name="cpf">
+		<label>CEP:</label><input type="text" name="cpf">
 		<label>Telefone:</label><input type="text" name="telefone">	
 		<input type="submit" value="vaii">
 	</form>
