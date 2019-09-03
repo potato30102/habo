@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 12-Ago-2019 às 15:23
+-- Data de Criação: 13-Ago-2019 às 17:42
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -5816,7 +5816,7 @@ CREATE TABLE IF NOT EXISTS `tb_orientacao` (
   `cd_orientacao` int(11) NOT NULL AUTO_INCREMENT,
   `nm_orientacao` varchar(100) NOT NULL,
   PRIMARY KEY (`cd_orientacao`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `tb_orientacao`
@@ -5916,7 +5916,14 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
   PRIMARY KEY (`cd_usuario`),
   KEY `id_estadocivil` (`id_estadocivil`),
   KEY `id_sangue` (`id_sangue`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `tb_usuario`
+--
+
+INSERT INTO `tb_usuario` (`cd_usuario`, `nm_usuario`, `dt_nascimento`, `ds_cpf`, `ds_sexo`, `id_estadocivil`, `ds_foto`, `ds_email`, `ds_senha`, `id_sangue`) VALUES
+(1, 'Gabriel Gomes Garcia', '2019-08-21', '15878765860', 'Masculino', 2, 'IMG/gomes.jpg', 'gomesgarcia10@gmail.com', 'sophiaaaa', 3);
 
 --
 -- Constraints for dumped tables
