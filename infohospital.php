@@ -13,7 +13,7 @@
 		 //$_SESSION['email'] = "vfhtf";
 		 //$_SESSION['senha'] = "vfhtf";
 
-		$sql = "SELECT * FROM tb_hospital WHERE cd_hospita = 1";
+		$sql = "SELECT * FROM tb_hospital WHERE cd_hospital = 2";
 		
 			if ($result = $mysqli->query($sql)){
 				if($result->num_rows>=0){
@@ -24,6 +24,7 @@
 						      <b>Telefone:</b>'.$row->ds_telefone.'<br><br>
 						      <b>Email:</b>'.$row->ds_email.'<br><br>
 						      <b>Senha:</b>'.$row->ds_senha.'<br><br>';
+						//echo $sql;
 					}
 				}
 			}
